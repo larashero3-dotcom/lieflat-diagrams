@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CARD_TITLE</title>
+<style>
+:root {
+  --paper: #F0EFEB;
+  --ink: #58402E;
+  --gray: #43593B;
+  --muted: #77835A;
+  --faint: rgba(88,64,46,.32);
+  --gold: #D4A017;
+  --olive: #ACAD79;
+  --wheat: #F2D17E;
+  --line-main: #77835A;
+  --line-secondary: rgba(119,131,90,.78);
+  --line-rule: rgba(119,131,90,.38);
+  --line-grid: rgba(119,131,90,.18);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, sans-serif; }
+.wrap { max-width: 1280px; margin: auto; padding: 72px 40px 30px; }
+.card { margin: 0 0 46px; }
+.card-head { margin: 0 20px; }
+.card h2 { margin: 0; font: 400 13px Georgia, serif; letter-spacing: .08em; }
+.legend { margin: 13px 20px 0; color: var(--gray); font-size: 10px; }
+.canvas { max-width: 100%; margin-top: 24px; overflow-x: auto; overflow-y: hidden; }
+.scene {
+  position: relative;
+  min-width: 1120px;
+  background-image:
+    radial-gradient(ellipse 27% 42% at 32% 37%, rgba(172,173,121,.24), transparent 100%),
+    radial-gradient(ellipse 25% 40% at 73% 66%, rgba(119,131,90,.19), transparent 100%),
+    radial-gradient(ellipse 13% 30% at 88% 29%, rgba(242,209,126,.18), transparent 100%);
+}
+.glass-layer { position: absolute; inset: 0; pointer-events: none; user-select: none; }
+.pane {
+  position: absolute;
+  left: var(--x); top: var(--y); width: var(--w); height: var(--h);
+  border: 1px solid rgba(255,255,255,.78); border-radius: var(--r,18px);
+  background: linear-gradient(135deg,rgba(255,255,255,.10),rgba(119,131,90,.025));
+  box-shadow: inset 1px 2px 1px rgba(255,255,255,.88), inset -1px -2px 1px rgba(67,89,59,.22);
+  backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px);
+}
+svg { position: relative; z-index: 1; display: block; width: 100%; height: auto; overflow: visible; }
+svg text { fill: var(--ink); font: 400 12px Arial, sans-serif; text-anchor: middle; }
+svg .edge, svg .boundary, svg .shape {
+  fill: none; stroke: var(--line-main); stroke-width: 1.26;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
+  .pane { background: rgba(255,255,255,.20); }
+}
+@media (max-width:700px) {
+  .wrap { padding: 38px 18px 16px; }
+  .card-head, .legend { margin-left: 0; margin-right: 0; }
+  .scene { min-width: 1120px; }
+  .pane { backdrop-filter: none; -webkit-backdrop-filter: none; }
+}
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+</style>
+</head>
+<body>
+<!-- Output shell reference only. It cannot be used for template selection or as a starting point. Read both complete files in ../templates/, then extract and adapt one of their 35 real cards. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <filter id="palm-edge-refraction" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".009 .015" numOctaves="1" seed="7" result="edge-noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="edge-noise" scale="24" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+<main class="wrap">
+<section class="card" id="diagram" aria-labelledby="diagram-heading">
+  <div class="card-head"><h2 id="diagram-heading">CARD_TITLE</h2></div>
+  <div class="legend">LEGEND</div>
+  <div class="canvas" role="region" tabindex="0" aria-label="CARD_TITLE; scroll horizontally on narrow screens">
+    <div class="scene">
+      <div class="glass-layer" aria-hidden="true">GLASS_LAYER</div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 640" role="img" aria-labelledby="diagram-title diagram-desc">
+        <title id="diagram-title">ACCESSIBLE_TITLE</title>
+        <desc id="diagram-desc">ACCESSIBLE_DESCRIPTION</desc>
+        <!-- SVG_CONTENT: copy the chosen gallery card's real SVG structure here. -->
+        SVG_CONTENT
+      </svg>
+    </div>
+  </div>
+</section>
+</main>
+<script>
+(() => {
+  'use strict';
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  if (reduced.matches) document.documentElement.dataset.motion = 'reduced';
+})();
+</script>
+</body>
+</html>

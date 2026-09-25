@@ -195,7 +195,7 @@ The 35 templates are not independent chart types but one shared design system: o
 So the difference between `lieflat-diagrams` and asking a model to hand-write an SVG is not just "having templates":
 
 - Candidate cards are checked against both galleries before a structure is chosen, rather than sketching a layout first and assembling a diagram to fit
-- A card's geometric proportions, glass material, and whitespace are part of the source; content changes, those visual tokens do not
+- The visual tokens are what stay fixed: palette, glass material, font sizes, stroke weights, whitespace rhythm, motion timing. Node counts, branch depth, and canvas size follow the content, asymmetry included
 - Both the English and Chinese galleries get verified, which is how label-length and narrow-screen wrapping differences surface
 - HTML is the single design source; PNG and SVG are derived from validated HTML and never maintained separately
 - Motion data drives opacity and stroke only, never geometry, so the static state with motion disabled always matches the final layout

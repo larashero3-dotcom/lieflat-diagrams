@@ -16,9 +16,9 @@ After selecting plausible IDs, read the complete candidate card section in both 
 
 Select only from these 35 templates. If none is semantically suitable, tell the user what is missing and obtain approval before designing a new diagram type.
 
-The selected card is the implementation source. Copy its HTML, SVG, glass layers, and motion code. Preserve the overall geometry, palette, typography, stroke widths, corner radii, material treatment, and whitespace. Change content and only the local coordinates needed to prevent clipping or overlap.
+The selected card is the implementation source. Copy its HTML, SVG, glass layers, and motion code. What must survive is the design system, not the example figure's node count. Section 4 states exactly what is fixed and what adapts.
 
-Template fidelity is a testable requirement. When the result and selected template are placed side by side, layout, hierarchy, visual tokens, glass material, line treatment, and motion must clearly belong to the same design system. Applying Palm colors to a newly invented structure does not pass.
+Design-system fidelity is a testable requirement. When the result and the selected template are placed side by side, visual tokens, glass material, line treatment, typography, spacing rhythm, and motion must clearly belong to the same design system. Applying Palm colors to a newly invented visual language does not pass. Two diagrams of the same type may legitimately differ in node count, depth, and canvas size.
 
 Do not start from `assets/standalone-template.html`, Mermaid, a generic SVG, or a prose style description. The standalone file is an output shell only and cannot be used for template selection or initial diagram construction.
 
@@ -79,19 +79,34 @@ The extractor copies the exact card with the template's font links, shared CSS, 
 
 ## 4. Adapt the extracted card
 
-Preserve the card's HTML hierarchy, SVG groups, marker definitions, glass layer, shared CSS, and scripts. Change only what the content requires:
+Preserve the card's HTML hierarchy, SVG groups, marker definitions, glass layer, shared CSS, and scripts.
 
-- card title and number
-- legend or diagram note
-- visible labels
-- SVG `<title>` and `<desc>`
-- metadata values
-- node and edge counts
-- coordinates, paths, viewBox, and pane bounds when content no longer fits
+Two things are being copied, and they have opposite rules. The design system is fixed. The figure's structure adapts to the content.
 
-Keep stable identifiers where possible. When adding nodes or edges, copy the closest existing structural element and update every related ID, `data-*` attribute, marker reference, accessibility reference, and pane bound.
+**Fixed — identical to the template, in every output:**
 
-Use the selected template geometry as the starting point. Make the smallest geometric change that prevents overlap and preserves legibility. Do not replace the copied card with a generic SVG.
+- Palm color tokens, paper background, and layer order
+- typeface, font sizes, weights, and `text-anchor` conventions
+- glass material: pane construction, `backdrop-filter`, the hidden `palm-edge-refraction` filter, and its CSS fallback
+- stroke widths, corner radii, dash conventions, and marker shapes
+- card chrome: `card-head`, numbering style, legend format, `.canvas` and `.scene` wrappers
+- edge vocabulary: the curve grammar the template uses for its connectors, so added edges match existing ones
+- motion grammar: `data-at` staging, 650ms `data-draw` versus 360ms fade, IntersectionObserver autoplay, click and Enter/Space replay, reduced-motion behavior
+- accessibility structure of section 8
+
+**Adaptive — driven by the content, not by the template's example figure:**
+
+- node, branch, leaf, lane, row, column, and edge counts
+- nesting depth and how many children each parent has
+- coordinates, path routing, viewBox dimensions, and pane bounds
+- reading order and `data-at` values, restaged to match the new structure
+- card title, numbering, legend text, labels, `<title>`, `<desc>`, and metadata values
+
+Structure follows the source. If the source has five themes and one of them has four subtopics while the others have two, the diagram is asymmetric. Padding a branch with invented material or dropping a real one to match the template's node count is a content error, not a layout decision. Resize the viewBox rather than compress labels below the template's font sizes.
+
+Keep stable identifiers where possible. When adding nodes or edges, copy the closest existing structural element and update every related ID, `data-*` attribute, marker reference, accessibility reference, and pane bound. A new branch must reuse the template's curve and spacing vocabulary, so it reads as the same design system rather than a second style inside one figure.
+
+Do not replace the copied card with a generic SVG. Recomputing geometry for new content is expected; abandoning the template's visual language is not.
 
 ## 5. Choose delivery formats
 
@@ -168,13 +183,14 @@ If motion is unnecessary or unsupported, deliver the complete static state.
 
 Before delivery:
 
-- Compare the output beside the selected card and check geometry, hierarchy, tokens, glass, line treatment, whitespace, and motion.
+- Compare the output beside the selected card and check visual tokens, glass, line treatment, typography, spacing rhythm, and motion. Expect the structure to differ; expect the design system not to.
+- Confirm counts, depth, and any asymmetry follow the source rather than the template's example figure.
 - Confirm the output has exactly one `.card` section, one `.scene`, and one diagram SVG.
 - Confirm its ID matches the selected catalog ID unless an integration requires a documented unique ID.
 - Confirm SVG IDs and references are unique and valid.
 - Confirm visible labels agree with `<title>`, `<desc>`, legend, and metadata.
 - Confirm arrows, containment, polarity, multiplicity, dates, and ownership match the source.
-- Confirm no label is clipped or covered at the template viewBox size.
+- Confirm no label is clipped or covered at the output's own viewBox size.
 - Confirm panes align with the nodes or scopes they represent.
 - Confirm the page remains readable without JavaScript.
 - Confirm reduced motion produces a complete static diagram.

@@ -1,5 +1,7 @@
 # lieflat-diagrams
 
+[![lieflat-diagrams: a liquid-glass diagram skill with 35 templates](docs/assets/readme-hero-en.png)](https://moxt.ai/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_banner)
+
 [中文](README.zh-CN.md) | English
 
 `lieflat-diagrams` is a liquid-glass diagram skill with 35 diagram types, built around a coconut-grove green palette, for Moxt, Claude Code, Codex, and any other AI agent that reads `SKILL.md`. It covers the common flowchart and structure types, generates refined motion from HTML, and delivers HTML, SVG, and PNG.
@@ -86,7 +88,11 @@ Users can request `html`, `svg`, `png`, or several formats. With nothing specifi
 
 ## Painless install
 
-One command:
+Prefer to start in [Moxt](https://moxt.ai/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_install) — open the page and install in one click:
+
+[![Use lieflat-diagrams in Moxt](docs/assets/moxt-quick-start-en.png)](https://moxt.ai/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_install)
+
+Or install from the command line, one command:
 
 ```bash
 npx skills add https://github.com/larashero3-dotcom/lieflat-diagrams --skill lieflat-diagrams

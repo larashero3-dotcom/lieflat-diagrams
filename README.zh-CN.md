@@ -1,6 +1,6 @@
 # lieflat-diagrams
 
-[![lieflat-diagrams：35 种图型的液态玻璃风格流程图 skill](docs/assets/readme-hero-zh-v2.png)](https://moxt.ai/zh-CN/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_banner)
+[![lieflat-diagrams：35 种图型的液态玻璃风格流程图 skill](docs/assets/readme-hero-zh-v3.png)](https://moxt.ai/zh-CN/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_banner)
 
 中文 | [English](README.md)
 

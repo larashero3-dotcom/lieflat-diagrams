@@ -1,6 +1,6 @@
 # lieflat-diagrams
 
-[![lieflat-diagrams: a liquid-glass diagram skill with 35 templates](docs/assets/readme-hero-en-v2.png)](https://moxt.ai/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_banner)
+[![lieflat-diagrams: a liquid-glass diagram skill with 35 templates](docs/assets/readme-hero-en-v3.png)](https://moxt.ai/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_banner)
 
 [中文](README.zh-CN.md) | English
 

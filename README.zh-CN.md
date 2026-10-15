@@ -1,6 +1,6 @@
 # lieflat-diagrams
 
-[![lieflat-diagrams：35 种图型的液态玻璃风格流程图 skill](docs/assets/readme-hero-zh.png)](https://moxt.ai/zh-CN/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_banner)
+[![lieflat-diagrams：35 种图型的液态玻璃风格流程图 skill](docs/assets/readme-hero-zh-v2.png)](https://moxt.ai/zh-CN/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_banner)
 
 中文 | [English](README.md)
 
@@ -90,7 +90,7 @@ SVG 是 diagram canvas 的静态矢量导出。它保留原 SVG 的几何、文�
 
 推荐在 [Moxt](https://moxt.ai/zh-CN/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_install) 中使用，打开页面即可一键安装：
 
-[![在 Moxt 中使用 lieflat-diagrams](docs/assets/moxt-quick-start-zh.png)](https://moxt.ai/zh-CN/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_install)
+[![在 Moxt 中使用 lieflat-diagrams](docs/assets/moxt-quick-start-zh-v2.png)](https://moxt.ai/zh-CN/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_install)
 
 也可以直接命令行安装，一条命令装好：
 

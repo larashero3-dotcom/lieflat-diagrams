@@ -1,6 +1,6 @@
 # lieflat-diagrams
 
-[![lieflat-diagrams: a liquid-glass diagram skill with 35 templates](docs/assets/readme-hero-en.png)](https://moxt.ai/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_banner)
+[![lieflat-diagrams: a liquid-glass diagram skill with 35 templates](docs/assets/readme-hero-en-v2.png)](https://moxt.ai/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_banner)
 
 [中文](README.zh-CN.md) | English
 
@@ -90,7 +90,7 @@ Users can request `html`, `svg`, `png`, or several formats. With nothing specifi
 
 Prefer to start in [Moxt](https://moxt.ai/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_install) — open the page and install in one click:
 
-[![Use lieflat-diagrams in Moxt](docs/assets/moxt-quick-start-en.png)](https://moxt.ai/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_install)
+[![Use lieflat-diagrams in Moxt](docs/assets/moxt-quick-start-en-v2.png)](https://moxt.ai/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_install)
 
 Or install from the command line, one command:
 

@@ -2,7 +2,7 @@
 
 中文 | [English](README.md)
 
-`lieflat-diagrams` 是一套有 35 种图型的液态玻璃风格流程图 skill，在 [moxt.ai](https://moxt.ai) 制作，以椰林绿为主要配色，可供 Moxt、Claude Code、Codex 及其他兼容 `SKILL.md` 的 AI agent 使用。它包括常见的流程图图型，由 HTML 生成精美动效，可交付 HTML、SVG、PNG 等多种形式。在 [Moxt Hub](https://moxt.ai/zh-CN/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_intro) 中查看本 skill。
+`lieflat-diagrams` 是一套有 35 种图型的液态玻璃风格流程图 skill，以椰林绿为主要配色，可供 Claude Code、Codex 及其他兼容 `SKILL.md` 的 AI agent 使用。它包括常见的流程图图型，由 HTML 生成精美动效，可交付 HTML、SVG、PNG 等多种形式。
 
 35 个模板分成四组：
 
@@ -86,7 +86,7 @@ SVG 是 diagram canvas 的静态矢量导出。它保留原 SVG 的几何、文�
 
 ## 零门槛无痛安装
 
-推荐在 [Moxt](https://moxt.ai/zh-CN/hub?view=skill&id=lieflat-diagrams&utm_source=github&utm_medium=readme&utm_campaign=lieflat-diagrams_install) 中使用，打开页面即可一键安装。也可以直接命令行安装，一条命令装好：
+通过命令行一条命令即可安装：
 
 ```bash
 npx skills add https://github.com/larashero3-dotcom/lieflat-diagrams --skill lieflat-diagrams

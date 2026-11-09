@@ -231,6 +231,8 @@ lieflat-diagrams/
 
 ## 许可
 
-代码、脚本和文字说明采用 [MIT License](LICENSE)。
+代码、脚本、Skill 指令和文字说明按 [PolyForm Noncommercial License 1.0.0](LICENSE) 提供；图库、SVG 模板、视觉样式、预览图及其他自有视觉素材按 [CC BY-NC 4.0](LICENSE-ASSETS.md) 提供。
 
-图库、SVG 模板和视觉 assets 采用 [CC BY 4.0](LICENSE-ASSETS.md)。重新分发或修改这些 assets 时必须署名。
+**依本次公开许可，仅允许非商业使用。商业内容制作、商业客户成品交付及产品集成须另行取得 Lieflat 的商业授权。** 可选择[商业使用或产品集成授权](https://lieflat.work/skills/diagrams/#pricing)，或联系 larashero3@gmail.com。
+
+本次许可政策于 2026-11-09 发布。历史版本中已经授予的 MIT / CC BY 4.0 权利继续有效，本次变更不构成追溯撤销。请阅读[历史许可及适用范围](LICENSE-HISTORY.md)。第三方组件继续遵守各自许可。

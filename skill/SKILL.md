@@ -1,5 +1,6 @@
 ---
 name: lieflat-diagrams
+license: PolyForm-Noncommercial-1.0.0 (instructions); CC-BY-NC-4.0 (visual assets). See repository LICENSE, LICENSE-ASSETS.md and LICENSE-HISTORY.md.
 description: Select and adapt one of 35 hand-authored Palm liquid diagram templates to turn a user's structure, process, system relationship, or concept explanation into an accessible HTML diagram, with optional SVG and PNG exports. Use when a non-programmer asks to visualize a workflow, decision, timeline, comparison, organization, service, dependency, causal model, software system, classification, or conceptual route.
 ---
 

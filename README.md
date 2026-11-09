@@ -231,6 +231,8 @@ lieflat-diagrams/
 
 ## License
 
-Code, scripts, and prose documentation are under the [MIT License](LICENSE).
+Code, scripts, Skill instructions and prose documentation are offered under the [PolyForm Noncommercial License 1.0.0](LICENSE). Galleries, SVG templates, styling, previews and other first-party visual assets are offered under [CC BY-NC 4.0](LICENSE-ASSETS.md).
 
-The galleries, SVG templates, and visual assets are under [CC BY 4.0](LICENSE-ASSETS.md). Attribution is required when redistributing or modifying these assets.
+**These public license offers permit noncommercial use. Commercial content creation, commercial client delivery and product integration require separate commercial permission from Lieflat under these offers.** Choose [Commercial Use or Product Integration](https://lieflat.work/skills/diagrams/#pricing), or contact larashero3@gmail.com.
+
+This licensing policy was published on 2026-11-09. Earlier MIT / CC BY 4.0 grants remain effective for previously licensed material; this change is not a retroactive revocation. Read the [license history and scope](LICENSE-HISTORY.md). Third-party components retain their own licenses.

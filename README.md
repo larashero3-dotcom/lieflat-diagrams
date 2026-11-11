@@ -2,6 +2,8 @@
 
 [中文](README.zh-CN.md) | English
 
+**Website & commercial licenses:** [lieflat.work · Lieflat Diagrams](https://lieflat.work/skills/diagrams/)
+
 `lieflat-diagrams` is a liquid-glass diagram skill with 35 diagram types, built around a coconut-grove green palette, for Claude Code, Codex, and any other AI agent that reads `SKILL.md`. It covers the common flowchart and structure types, generates refined motion from HTML, and delivers HTML, SVG, and PNG.
 
 The 35 templates fall into four groups:

@@ -2,6 +2,8 @@
 
 中文 | [English](README.md)
 
+**官网与商业授权：** [lieflat.work · Lieflat Diagrams](https://lieflat.work/skills/diagrams/)
+
 `lieflat-diagrams` 是一套有 35 种图型的液态玻璃风格流程图 skill，以椰林绿为主要配色，可供 Claude Code、Codex 及其他兼容 `SKILL.md` 的 AI agent 使用。它包括常见的流程图图型，由 HTML 生成精美动效，可交付 HTML、SVG、PNG 等多种形式。
 
 35 个模板分成四组：

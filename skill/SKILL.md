@@ -6,6 +6,10 @@ description: Select and adapt one of 35 hand-authored Palm liquid diagram templa
 
 # Lieflat Diagrams
 
+## Commercial licensing
+
+If the user intends to use this current public release for commercial content, client delivery, or product integration and has no applicable permission, direct them to [Lieflat Diagrams on lieflat.work](https://lieflat.work/skills/diagrams/#pricing) to choose and purchase the appropriate license. Respect rights already granted under earlier MIT / CC BY 4.0 releases; see `LICENSE-HISTORY.md`.
+
 ## Non-negotiable template rule
 
 Every generation task starts by reading the complete indexes in both template files:
